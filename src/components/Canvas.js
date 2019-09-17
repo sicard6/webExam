@@ -56,8 +56,9 @@ class Canvas extends Component {
         //console.log(this.state.tweets);
         return (
             <div>
-                
-                <PostList tweetss={this.state.tweets} />
+                <div className = 'row'>
+                    <PostList tweetss={this.state.tweets} />
+                </div>
             </div>
         );
     }

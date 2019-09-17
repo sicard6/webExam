@@ -9,7 +9,7 @@ class PostList extends Component {
     render() {
 
         return (
-            <div className = "container">
+            <div className = "container col-4">
                 {
                     this.props.tweetss.map(e => <Post value = {e} />)
                 } 
