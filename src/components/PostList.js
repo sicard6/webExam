@@ -11,7 +11,7 @@ class PostList extends Component {
         return (
             <div className = "container col-4">
                 {
-                    this.props.tweetss.map(e => <Post value = {e} />)
+                    this.props.tweetss.map((e,i) => <Post value = {e} key = {'hola' + i} />)
                 } 
             </div>
         );

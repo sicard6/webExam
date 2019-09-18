@@ -20,19 +20,19 @@ class Post extends Component {
     }
 
     render() {
-        console.log(this.state);
         return (
             <div>
-                <div className='card row' >
+                <div className='card shadow-sm' >
                     <div className='col-3'>
-                        <img src={this.state.avatar} alt="avatar"/>
+                        <img src={this.state.avatar} alt="avatar" />
                     </div>
                     <div className='col-9'>
                         <div className="card-body">
-                            <p><h5 class="card-title">{this.state.first_name}, {this.state.last_name}</h5> {this.state.nick}</p>
+                            <h5 className="card-title">{this.state.first_name}, {this.state.last_name}</h5>
+                            <p> {this.state.nick}</p>
                             <p className="card-text">{this.state.content}</p>
                             <p className="card-text">{this.state.favs}</p>
-                            <button onClick = {this.handleLike} className= 'btn btn-primary'>like</button>
+                            <button onClick={this.handleLike} className='btn btn-primary'>like</button>
                         </div>
                     </div>
 
